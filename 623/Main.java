@@ -1,25 +1,23 @@
 //UVA623;
-import java.math.BigInteger;
+
 import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
 		Scanner enter = new Scanner(System.in);
-		BigInteger n;
-		int a;
+		long n;
+
 		while(enter.hasNext()) {
-			a = enter.nextInt();
-			if(a<=1000) {                   
-				n = BigInteger.valueOf(a);  
-				System.out.println(n+"!");
- 				System.out.println(recursive(n));  
-			}
+			n = enter.nextLong();                				
+			System.out.println(n+"!");
+ 			System.out.println(recursive(n));  
+			
 		}
 	}
-	public static BigInteger recursive(BigInteger n) {  
-		if(n==BigInteger.ZERO)
-			return BigInteger.ONE;
+	public static long recursive(long n) {  
+		if(n==0)
+			return 1;
 		else
-			return n.multiply( recursive( n.subtract(BigInteger.ONE) ) );
+			return n*recursive(n);
 	}
 }
