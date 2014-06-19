@@ -10,8 +10,10 @@ public class Main {
 		while(enter.hasNext()) {
 			n = enter.nextInt();
 			
-			if(n==0)
+			if(n==0) {
 				System.out.println("END OF OUTPUT");
+				break;
+			}
 			
 			if(factor_sum(n) > n)
 				System.out.println(n + " ABUNDANT");
