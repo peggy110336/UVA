@@ -6,8 +6,8 @@ public class Main {
 		Scanner enter = new Scanner(System.in);
 		int n;
 		
+		System.out.println("PERFECTION OUTPUT");
 		while(enter.hasNext()) {
-			System.out.println("PERFECTION OUTPUT");
 			n = enter.nextInt();
 			
 			if(n==0)
