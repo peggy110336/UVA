@@ -16,11 +16,11 @@ public class Main {
 			}
 			
 			if(factor_sum(n) > n)
-				System.out.println(n + " ABUNDANT");
+				System.out.printf("%5d ABUNDANT",n);
 			else if(factor_sum(n) == n)
-				System.out.println(n + " PERFECT");
+				System.out.printf("%5d PERFECT",n);
 			else
-				System.out.println(n + " DEFICIENT");
+				System.out.printf("%5d DEFICIENT",n);
 		}
 	}
 	public static int factor_sum(int a) {
